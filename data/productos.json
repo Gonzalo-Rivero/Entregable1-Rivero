@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "nombre": "Espresso",
+    "precio": 2000,
+    "descripcion": "Café negro concentrado y aromático",
+    "categoria": "cafe",
+    "imagen": "img/espresso.jpg",
+    "fallback": "☕"
+  },
+  {
+    "id": 2,
+    "nombre": "Latte",
+    "precio": 2500,
+    "descripcion": "Café con leche cremosa y suave",
+    "categoria": "cafe",
+    "imagen": "img/latte.jpg",
+    "fallback": "🥛"
+  },
+  {
+    "id": 3,
+    "nombre": "Cappuccino",
+    "precio": 3000,
+    "descripcion": "Café con espuma de leche perfecta",
+    "categoria": "cafe",
+    "imagen": "img/cappuccino.jpg",
+    "fallback": "☕"
+  },
+  {
+    "id": 4,
+    "nombre": "Mocha",
+    "precio": 3500,
+    "descripcion": "Café con chocolate y leche",
+    "categoria": "cafe",
+    "imagen": "img/mocha.jpg",
+    "fallback": "🍫"
+  },
+  {
+    "id": 5,
+    "nombre": "Americano",
+    "precio": 2000,
+    "descripcion": "Café negro diluido con agua caliente",
+    "categoria": "cafe",
+    "imagen": "img/americano.jpg",
+    "fallback": "☕"
+  },
+  {
+    "id": 6,
+    "nombre": "Croissant",
+    "precio": 2700,
+    "descripcion": "Panadería francesa tradicional",
+    "categoria": "panaderia",
+    "imagen": "img/croissant.jpg",
+    "fallback": "🥐"
+  },
+  {
+    "id": 7,
+    "nombre": "Torta de Chocolate",
+    "precio": 4321,
+    "descripcion": "Deliciosa torta casera",
+    "categoria": "postre",
+    "imagen": "img/torta_de_chocolate.avif",
+    "fallback": "🍰"
+  }
+] 

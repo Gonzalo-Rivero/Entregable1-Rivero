@@ -1,25 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simulador de Cafetería</title>
-    <link rel="stylesheet" href="styles.css" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Cafetería - Entregable 2</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <h1>Simulador de Cafetería ☕️</h1>
-    <p>
-        Este simulador te permite “pedir” diferentes tipos de café,
-        acumula el total de tu cuenta y te pregunta si quieres seguir
-        pidiendo o pagar.
-        Podes usar la consola (Con la tecla "F12") para ver el menú y los logs de cada pedido,
-        y los diálogos para interactuar.
-    </p>
+    <!-- Header principal -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">☕ Cafetería Virtual</h1>
+            <p class="subtitle">Simulador interactivo de pedidos online</p>
+        </div>
+    </header>
 
-    <script src="cafeteria.js"></script>
+    <!-- Navegación principal -->
+    <nav class="nav">
+        <div class="container">
+            <div class="filtros-categoria">
+                <button class="filtro-categoria activo" data-categoria="todos">
+                    🍽️ Todos los productos
+                </button>
+                <button class="filtro-categoria" data-categoria="cafe">
+                    ☕ Cafés
+                </button>
+                <button class="filtro-categoria" data-categoria="panaderia">
+                    🥐 Panadería
+                </button>
+                <button class="filtro-categoria" data-categoria="postre">
+                    🍰 Postres
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main">
+        <div class="container">
+            <div class="layout">
+                <!-- Sección de productos -->
+                <section class="productos-section">
+                    <h2>Nuestro Menú</h2>
+                    <div id="productos-container" class="productos-grid">
+                        <!-- Los productos se renderizan dinámicamente aquí -->
+                    </div>
+                </section>
+
+                <!-- Sección del carrito -->
+                <aside class="carrito-section">
+                    <div class="carrito-header">
+                        <h2>🛒 Tu Carrito</h2>
+                        <span class="carrito-contador" id="carrito-contador">0</span>
+                    </div>
+                    
+                    <div id="carrito-container" class="carrito-items">
+                        <!-- Los items del carrito se renderizan dinámicamente aquí -->
+                    </div>
+                    
+                    <div class="carrito-footer">
+                        <div class="carrito-total">
+                            <span>Total:</span>
+                            <span id="total-carrito">$0.00</span>
+                        </div>
+                        
+                        <div class="carrito-acciones">
+                            <button id="btn-limpiar-carrito" class="btn btn-secundario">
+                                🗑️ Limpiar
+                            </button>
+                            <button id="btn-finalizar-compra" class="btn btn-primario">
+                                💳 Finalizar Compra
+                            </button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Cafetería Virtual - Entregable 2 JavaScript</p>
+            <p>Desarrollado por Gonzalo Rivero</p>
+        </div>
+    </footer>
+<!--Saludos Gonzalo Rivero-->>
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/cafeteria.js"></script>
 </body>
-
 </html>
